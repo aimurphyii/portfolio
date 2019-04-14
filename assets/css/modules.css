@@ -79,3 +79,53 @@ ul.icons li {
   #header .icons a:hover {
   color: #fff;
 }
+
+/* Footer */
+
+#footer .copyright li:first-child {
+  border-left: 0;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Main */
+ #main > section.dark {
+  color: #ddd;
+  color: rgba(255, 255, 255, 0.75);
+  }
+
+  #main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
+  color: inherit;
+  }
+
+  #main > section.dark strong {
+    color: #fff;
+    border-color: inherit;
+  }
+
+  #main > section.dark a {
+   color: #fff;
+   border-color: inherit;
+  }
+
+  #main > section.dark a:hover {
+   border-bottom-color: rgba(255, 255, 255, 0);
+  }
+
+
+    #main > section.one {
+      background-color: #81918E;
+      background-image: url("../../images/banner.jpg");
+    }
+
+    #main > section.two {
+      background-color: #f5fafa;
+    }
+
+    #main > section.three {
+      background-color: #ecf1f1;
+    }
+
+    #main > section.four {
+      background-color: #e8edec;
+    }
