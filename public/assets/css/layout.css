@@ -1796,7 +1796,7 @@ ul.icons a {
 
 /* Narrow */
 
-@media screen and (min-width: 961px) and (max-width: 1320px) {
+@media screen and (min-width: 737px) and (max-width: 1320px) {
 
   /* Basic */
 
@@ -1867,7 +1867,7 @@ ul.icons a {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 736px) {
 /* basic */
     .container {
       padding: 0 2em 0 2em;
@@ -1947,7 +1947,7 @@ ul.icons a {
       display: block;
       height: 2.25em;
       left: 0;
-      position: fixed;
+      /* position: fixed; */
       top: 0;
       width: 3.25em;
       z-index: 10001;
