@@ -113,11 +113,29 @@ ul.icons li {
   }
 
 
-    #main > section.one {
+    /* #main > section.one {
       background-color: #81918E;
       background-image: url("../../images/njinbeizame.jpeg");
+    } */
+    /* BEGIN UGLY HERE */
+    #jquery-carousel{
+      position:relative;
+      /* width:600px; */
+      height:300px;
     }
-
+    #jquery-carousel ul{
+      padding:0;
+      margin:0;
+      list-style:none;
+    }
+    #jquery-carousel li{
+      padding:0;
+      margin:0;
+      position: absolute;
+      z-index: -1;
+    }
+    /* END OF UGLY */
+/* HERO ^this is where the hero image is */
     #main > section.two {
       background-color: #f5fafa;
     }

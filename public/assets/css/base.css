@@ -59,6 +59,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h2 {
   font-size: 2em;
   letter-spacing: -1px;
+  margin-top: 2em;
 }
 
   h2.alt {
@@ -285,6 +286,8 @@ button,
   color: #fff !important;
   text-decoration: none;
   padding: 0.75em 2.5em 0.75em 2.5em;
+  /* more ugly family"bottom" */
+  margin-bottom: 20px;
   background-color: #9ef093;
   border: 0;
   cursor: pointer;
