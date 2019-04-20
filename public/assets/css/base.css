@@ -452,11 +452,13 @@ button,
       z-index:500;
       width:30px;
       height:30px;
-      border-radius:10px;
-      text-decoration: none;
+      /* border-radius:10px;
+      text-decoration: none; */
       margin-top: 30%;
-      background: rgba(65, 72, 76, 0.5);
-      color: rgba(221, 221, 221, 0.5);
+      filter: opacity(.6);
+      color: #ddd;
+      /* background: rgba(65, 72, 76, 0.5);
+      color: rgba(221, 221, 221, 0.5); */
     }
     #jquery-carousel .next{
       right:5%;
