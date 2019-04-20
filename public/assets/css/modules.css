@@ -118,10 +118,13 @@ ul.icons li {
       background-image: url("../../images/njinbeizame.jpeg");
     } */
     /* BEGIN UGLY HERE */
-    #jquery-carousel{
-      position:relative;
-      /* width:600px; */
-      height:300px;
+    /* #jquery-carousel{
+      position: relative;
+      width:auto;
+      height:auto;
+      padding:0px;
+      display: flex;
+      align-items: stretch;
     }
     #jquery-carousel ul{
       padding:0;
@@ -132,8 +135,33 @@ ul.icons li {
       padding:0;
       margin:0;
       position: absolute;
-      z-index: -1;
+      z-index: -100;
+      display: none;
+      align-self: stretch;
     }
+    #jquery-carousel li.active{
+      display: inline-block;
+    }
+    #jquery-carousel li img{
+      height:100%;
+    }
+    #jquery-carousel .prev,#jquery-carousel .next{
+      position: absolute;
+      z-index:500;
+      width:30px;
+      height:30px;
+      border-radius:10px;
+      text-decoration: none;
+      margin-top: 50%;
+      background: rgba(65, 72, 76, 0.5);
+      color: rgba(221, 221, 221, 0.5);
+    }
+    #jquery-carousel .next{
+      right: 15%;
+    }
+    #jquery-carousel .prev{
+      left:15%; */
+    /* } */
     /* END OF UGLY */
 /* HERO ^this is where the hero image is */
     #main > section.two {

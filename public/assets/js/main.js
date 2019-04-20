@@ -121,3 +121,32 @@
 				});
 
 })(jQuery);
+
+// jquery-carousel
+// credit due:https://learnwebtutorials.com/how-to-make-a-jquery-carousel
+
+$('#jquery-carousel .next').on('click', function(e){
+	e.preventDefault();
+	var currently = $('#jquery-carousel li.active');
+	var nextUp = $('#jquery-carousel li.active').next();
+
+	currently.removeClass('active').hide();
+
+	if(nextUp.length===0){
+		nextUp=$('#jquery-carousel li').first();
+	}
+	nextUp.addClass('active').show();
+});
+
+$('#jquery-carousel .prev').on('click', function(e){
+	e.preventDefault();
+	var currently = $('#jquery-carousel li.active');
+	var backUp = $('#jquery-carousel li.active').prev();
+
+	currently.removeClass('active').hide();
+
+	if(backUp.length===0){
+		backUp=$('#jquery-carousel li').last();
+	}
+	backUp.addClass('active').show();
+});

@@ -287,7 +287,7 @@ button,
   text-decoration: none;
   padding: 0.75em 2.5em 0.75em 2.5em;
   /* more ugly family"bottom" */
-  margin-bottom: 20px;
+  /* margin-bottom: 200px; */
   background-color: #9ef093;
   border: 0;
   cursor: pointer;
@@ -328,7 +328,9 @@ button,
     body, input, textarea, select {
       font-size: 17pt;
     }
-
+    #jquery-carousel li img{
+      max-width: 120%;
+    }
 
 }
 
@@ -336,15 +338,9 @@ button,
 
 @media screen and (min-width: 961px) and (max-width: 1620px) {
 
-  /* Main */
-/* 
-    #main > section {
-      padding: 3em 0;
-    }
-
-    #main section.cover {
-      padding: 5em 0;
-    } */
+  #jquery-carousel li img{
+    max-width: 120%;
+  }
 
 }
 
@@ -357,7 +353,9 @@ button,
     body, input, textarea, select {
       font-size: 15pt;
     }
-
+    #jquery-carousel li img{
+      max-width: 120%;
+    }
 }
 
 /* Narrower */
@@ -378,7 +376,9 @@ button,
     header br {
       display: none;
     }
-
+    #jquery-carousel li img{
+      max-width: 140%;
+    }
 
 }
 
@@ -397,4 +397,71 @@ button,
       letter-spacing: 0;
       font-weight: 300;
     }
+    #jquery-carousel li img{
+      max-width: 190%;
+    }
 }
+@media screen and (max-width: 370px) {
+
+  /* Basic */
+
+    body, input, textarea, select {
+      font-size: 14pt;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      letter-spacing: 0;
+      font-weight: 300;
+    }
+    #jquery-carousel li img{
+      max-width: 280%;
+    }
+}
+
+    /* BEGIN UGLY HERE */
+    #jquery-carousel{
+      position: relative;
+      width:auto;
+      height:auto;
+      padding:0px;
+      display: flex;
+      align-items: stretch;
+    }
+    #jquery-carousel ul{
+      padding:0;
+      margin:0;
+      list-style:none;
+    }
+    #jquery-carousel li{
+      padding:0;
+      margin:0;
+      position: absolute;
+      z-index: -100;
+      display: none;
+      align-self: stretch;
+    }
+    #jquery-carousel li.active{
+      display: inline-block;
+    }
+    /* #jquery-carousel li img{
+      max-width: 120%;
+    } */
+    #jquery-carousel .prev,#jquery-carousel .next{
+      position: absolute;
+      z-index:500;
+      width:30px;
+      height:30px;
+      border-radius:10px;
+      text-decoration: none;
+      margin-top: 30%;
+      background: rgba(65, 72, 76, 0.5);
+      color: rgba(221, 221, 221, 0.5);
+    }
+    #jquery-carousel .next{
+      right:5%;
+    }
+    #jquery-carousel .prev{
+      left:5%;
+    }
+    /* END OF UGLY */
