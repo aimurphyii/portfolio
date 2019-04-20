@@ -329,7 +329,7 @@ button,
       font-size: 17pt;
     }
     #jquery-carousel li img{
-      max-width: 120%;
+      max-width: 80%;
     }
 
 }
@@ -339,7 +339,7 @@ button,
 @media screen and (min-width: 961px) and (max-width: 1620px) {
 
   #jquery-carousel li img{
-    max-width: 120%;
+    max-width: 100%;
   }
 
 }
@@ -354,7 +354,7 @@ button,
       font-size: 15pt;
     }
     #jquery-carousel li img{
-      max-width: 120%;
+      max-width: 110%;
     }
 }
 
